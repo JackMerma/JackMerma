@@ -11,6 +11,7 @@ on:
       - "assets/langmix.json"
       - "scripts/radar.py"
       - "scripts/cards.py"
+      - "scripts/theme.py"
       - ".github/workflows/radar.yml"
 
 permissions:

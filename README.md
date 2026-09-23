@@ -10,17 +10,17 @@
 <br>
 
 <a href="https://github.com/JackMerma">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2600&pause=900&color=AA9BEF&center=true&vCenter=true&width=880&lines=Jackson+Merma+-+AI+%26+Software+Engineer;Agentic+Workflows+%2F+RAG+%2F+Generative+AI;Turning+prompts+into+production+systems" alt="typing banner">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2600&pause=900&color=7FD8A0&center=true&vCenter=true&width=880&lines=Jackson+Merma+-+AI+%26+Software+Engineer;Agentic+Workflows+%2F+RAG+%2F+Generative+AI;Turning+prompts+into+production+systems" alt="typing banner">
 </a>
 
 <br>
 
 <a href="https://www.linkedin.com/in/jackson-merma/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>&nbsp;&nbsp;
-<a href="https://www.instagram.com/jinnbit/"><img src="https://img.shields.io/badge/Instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=aa9bef" alt="Instagram"></a>
+<a href="https://www.instagram.com/jinnbit/"><img src="https://img.shields.io/badge/Instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=7fd8a0" alt="Instagram"></a>
 
 <br>
 
-<img src="https://komarev.com/ghpvc/?username=jackmerma&style=flat&color=aa9bef&label=profile+views" alt="profile views">
+<img src="https://komarev.com/ghpvc/?username=jackmerma&style=flat&color=7fd8a0&label=profile+views" alt="profile views">
 
 </div>
 

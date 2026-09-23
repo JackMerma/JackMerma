@@ -1,0 +1,22 @@
+{
+  "handle": "@JackMerma",
+  "node": "UTC-5 · LATAM NODE",
+  "rows": [
+    { "label": "Subject", "value": "Jackson Merma" },
+    { "label": "Role", "value": "AI & Software Engineer" },
+    { "label": "Origin", "value": "Arequipa · Perú" },
+    { "label": "Education", "value": "UNSA · Systems Engineering" },
+    { "label": "Status", "value": "Building + Shipping + Researching" },
+    { "label": "ToolChain", "value": "VSCode · Cursor · Git" },
+    { "label": "Core.Lang", "value": "Python · TypeScript · C++" },
+    { "label": "Core.GenAI", "value": "LangChain · RAG · Agents · MCP" },
+    { "label": "Core.Vision", "value": "OpenCV · Stable Diffusion" },
+    { "label": "Core.Backend", "value": "FastAPI · Django · Node" },
+    { "label": "Core.Database", "value": "PostgreSQL · Neo4j · ChromaDB" },
+    { "label": "Core.Infra", "value": "GCP · Docker · Kubernetes" },
+    { "label": "Grid.Mail", "value": "jinnbit@gmail.com" },
+    { "label": "Grid.LinkedIn", "value": "/in/jackson-merma" },
+    { "label": "Grid.GitHub", "value": "JackMerma" },
+    { "label": "Grid.Instagram", "value": "@jinnbit" }
+  ]
+}

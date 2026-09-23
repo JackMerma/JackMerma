@@ -7,28 +7,7 @@ import json
 import math
 from xml.sax.saxutils import escape
 
-THEMES = {
-    "dark": {
-        "bg": "#0d1117",
-        "grid": "#21262d",
-        "axis": "#30363d",
-        "fill": "#aa9bef",
-        "fill_opacity": "0.28",
-        "stroke": "#aa9bef",
-        "text": "#c9d1d9",
-        "muted": "#8b949e",
-    },
-    "light": {
-        "bg": "#ffffff",
-        "grid": "#d0d7de",
-        "axis": "#d0d7de",
-        "fill": "#6f5bd6",
-        "fill_opacity": "0.18",
-        "stroke": "#6f5bd6",
-        "text": "#24292f",
-        "muted": "#57606a",
-    },
-}
+from theme import PALETTES, THEMES
 
 WIDTH = 700
 HEIGHT = 460
@@ -48,7 +27,7 @@ def point(angle, r, cx=None, cy=None):
 
 
 def render(data, theme_name, show_values):
-    t = THEMES[theme_name]
+    t = PALETTES[theme_name]
     n = len(data)
     angles = [-math.pi / 2 + i * (2 * math.pi / n) for i in range(n)]
 
@@ -71,7 +50,7 @@ def render(data, theme_name, show_values):
         x, y = point(a, RADIUS)
         parts.append(
             f'<line x1="{CX}" y1="{CY}" x2="{x:.2f}" y2="{y:.2f}" '
-            f'stroke="{t["axis"]}" stroke-width="1"/>'
+            f'stroke="{t["dim"]}" stroke-width="1"/>'
         )
         lx, ly = point(a, LABEL_OFFSET)
         anchor = "middle"
@@ -93,12 +72,12 @@ def render(data, theme_name, show_values):
         for x, y in (point(a, RADIUS * d["value"]) for a, d in zip(angles, data))
     )
     parts.append(
-        f'<polygon points="{pts}" fill="{t["fill"]}" fill-opacity="{t["fill_opacity"]}" '
-        f'stroke="{t["stroke"]}" stroke-width="2"/>'
+        f'<polygon points="{pts}" fill="{t["accent"]}" fill-opacity="{t["fill_opacity"]}" '
+        f'stroke="{t["accent"]}" stroke-width="2"/>'
     )
     for a, d in zip(angles, data):
         x, y = point(a, RADIUS * d["value"])
-        parts.append(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="3" fill="{t["stroke"]}"/>')
+        parts.append(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="3" fill="{t["accent"]}"/>')
 
     parts.append("</svg>")
     return "\n".join(parts)
@@ -114,7 +93,7 @@ def main():
     with open(args.data, encoding="utf-8") as f:
         data = json.load(f)
 
-    for theme in ("dark", "light"):
+    for theme in THEMES:
         svg = render(data, theme, args.values)
         out_path = f"{args.out}-{theme}.svg"
         with open(out_path, "w", encoding="utf-8") as f:

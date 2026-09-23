@@ -12,13 +12,10 @@ import os
 import urllib.request
 from xml.sax.saxutils import escape
 
+from theme import PALETTES, THEMES
+
 API = "https://api.github.com"
 GRAPHQL = "https://api.github.com/graphql"
-
-THEMES = {
-    "dark": {"bg": "#0d1117", "border": "#21262d", "text": "#c9d1d9", "muted": "#8b949e", "accent": "#aa9bef"},
-    "light": {"bg": "#ffffff", "border": "#d0d7de", "text": "#24292f", "muted": "#57606a", "accent": "#6f5bd6"},
-}
 
 
 def gh(token, url):
@@ -70,7 +67,7 @@ def collect_stats(token, user):
 
 
 def render_stat_card(stats, theme_name):
-    t = THEMES[theme_name]
+    t = PALETTES[theme_name]
     rows = [
         ("public repos", stats["public_repos"]),
         ("followers", stats["followers"]),
@@ -106,7 +103,7 @@ def main():
     os.makedirs(args.out, exist_ok=True)
 
     stats = collect_stats(token, args.user)
-    for theme in ("dark", "light"):
+    for theme in THEMES:
         svg = render_stat_card(stats, theme)
         with open(os.path.join(args.out, f"card-stats-{theme}.svg"), "w", encoding="utf-8") as f:
             f.write(svg)
