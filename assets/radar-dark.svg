@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 420 420" font-family="JetBrains Mono, ui-monospace, monospace">
+<rect width="420" height="420" fill="#0d1117" rx="12"/>
+<polygon points="210.00,175.00 240.31,192.50 240.31,227.50 210.00,245.00 179.69,227.50 179.69,192.50" fill="none" stroke="#21262d" stroke-width="1"/>
+<polygon points="210.00,140.00 270.62,175.00 270.62,245.00 210.00,280.00 149.38,245.00 149.38,175.00" fill="none" stroke="#21262d" stroke-width="1"/>
+<polygon points="210.00,105.00 300.93,157.50 300.93,262.50 210.00,315.00 119.07,262.50 119.07,157.50" fill="none" stroke="#21262d" stroke-width="1"/>
+<polygon points="210.00,70.00 331.24,140.00 331.24,280.00 210.00,350.00 88.76,280.00 88.76,140.00" fill="none" stroke="#21262d" stroke-width="1"/>
+<line x1="210.0" y1="210.0" x2="210.00" y2="70.00" stroke="#30363d" stroke-width="1"/>
+<text x="210.00" y="44.00" fill="#c9d1d9" font-size="12" text-anchor="middle" dominant-baseline="middle">GenAI / LLMs</text>
+<line x1="210.0" y1="210.0" x2="331.24" y2="140.00" stroke="#30363d" stroke-width="1"/>
+<text x="353.76" y="127.00" fill="#c9d1d9" font-size="12" text-anchor="start" dominant-baseline="middle">Agentic Workflows / RAG</text>
+<line x1="210.0" y1="210.0" x2="331.24" y2="280.00" stroke="#30363d" stroke-width="1"/>
+<text x="353.76" y="293.00" fill="#c9d1d9" font-size="12" text-anchor="start" dominant-baseline="middle">Backend / APIs</text>
+<line x1="210.0" y1="210.0" x2="210.00" y2="350.00" stroke="#30363d" stroke-width="1"/>
+<text x="210.00" y="376.00" fill="#c9d1d9" font-size="12" text-anchor="middle" dominant-baseline="middle">Data & Vector DBs</text>
+<line x1="210.0" y1="210.0" x2="88.76" y2="280.00" stroke="#30363d" stroke-width="1"/>
+<text x="66.24" y="293.00" fill="#c9d1d9" font-size="12" text-anchor="end" dominant-baseline="middle">Cloud / DevOps</text>
+<line x1="210.0" y1="210.0" x2="88.76" y2="140.00" stroke="#30363d" stroke-width="1"/>
+<text x="66.24" y="127.00" fill="#c9d1d9" font-size="12" text-anchor="end" dominant-baseline="middle">Computer Vision</text>
+<polygon points="210.00,77.00 319.12,147.00 313.06,269.50 210.00,322.00 119.07,262.50 125.13,161.00" fill="#aa9bef" fill-opacity="0.28" stroke="#aa9bef" stroke-width="2"/>
+<circle cx="210.00" cy="77.00" r="3" fill="#aa9bef"/>
+<circle cx="319.12" cy="147.00" r="3" fill="#aa9bef"/>
+<circle cx="313.06" cy="269.50" r="3" fill="#aa9bef"/>
+<circle cx="210.00" cy="322.00" r="3" fill="#aa9bef"/>
+<circle cx="119.07" cy="262.50" r="3" fill="#aa9bef"/>
+<circle cx="125.13" cy="161.00" r="3" fill="#aa9bef"/>
+</svg>

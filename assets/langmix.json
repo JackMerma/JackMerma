@@ -1,0 +1,9 @@
+[
+  { "label": "JavaScript", "value": 0.375 },
+  { "label": "HTML", "value": 0.3214 },
+  { "label": "Python", "value": 0.1711 },
+  { "label": "CSS", "value": 0.0944 },
+  { "label": "Kotlin", "value": 0.0156 },
+  { "label": "Jupyter Notebook", "value": 0.0136 },
+  { "label": "TypeScript", "value": 0.0089 }
+]

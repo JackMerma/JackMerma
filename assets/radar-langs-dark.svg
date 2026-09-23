@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 420 420" font-family="JetBrains Mono, ui-monospace, monospace">
+<rect width="420" height="420" fill="#0d1117" rx="12"/>
+<polygon points="210.00,175.00 237.36,188.18 244.12,217.79 225.19,241.53 194.81,241.53 175.88,217.79 182.64,188.18" fill="none" stroke="#21262d" stroke-width="1"/>
+<polygon points="210.00,140.00 264.73,166.36 278.24,225.58 240.37,273.07 179.63,273.07 141.76,225.58 155.27,166.36" fill="none" stroke="#21262d" stroke-width="1"/>
+<polygon points="210.00,105.00 292.09,144.53 312.37,233.36 255.56,304.60 164.44,304.60 107.63,233.36 127.91,144.53" fill="none" stroke="#21262d" stroke-width="1"/>
+<polygon points="210.00,70.00 319.46,122.71 346.49,241.15 270.74,336.14 149.26,336.14 73.51,241.15 100.54,122.71" fill="none" stroke="#21262d" stroke-width="1"/>
+<line x1="210.0" y1="210.0" x2="210.00" y2="70.00" stroke="#30363d" stroke-width="1"/>
+<text x="210.00" y="44.00" fill="#c9d1d9" font-size="12" text-anchor="middle" dominant-baseline="middle">JavaScript  (38%)</text>
+<line x1="210.0" y1="210.0" x2="319.46" y2="122.71" stroke="#30363d" stroke-width="1"/>
+<text x="339.78" y="106.50" fill="#c9d1d9" font-size="12" text-anchor="start" dominant-baseline="middle">HTML  (32%)</text>
+<line x1="210.0" y1="210.0" x2="346.49" y2="241.15" stroke="#30363d" stroke-width="1"/>
+<text x="371.84" y="246.94" fill="#c9d1d9" font-size="12" text-anchor="start" dominant-baseline="middle">Python  (17%)</text>
+<line x1="210.0" y1="210.0" x2="270.74" y2="336.14" stroke="#30363d" stroke-width="1"/>
+<text x="282.02" y="359.56" fill="#c9d1d9" font-size="12" text-anchor="start" dominant-baseline="middle">CSS  (9%)</text>
+<line x1="210.0" y1="210.0" x2="149.26" y2="336.14" stroke="#30363d" stroke-width="1"/>
+<text x="137.98" y="359.56" fill="#c9d1d9" font-size="12" text-anchor="end" dominant-baseline="middle">Kotlin  (2%)</text>
+<line x1="210.0" y1="210.0" x2="73.51" y2="241.15" stroke="#30363d" stroke-width="1"/>
+<text x="48.16" y="246.94" fill="#c9d1d9" font-size="12" text-anchor="end" dominant-baseline="middle">Jupyter Notebook  (1%)</text>
+<line x1="210.0" y1="210.0" x2="100.54" y2="122.71" stroke="#30363d" stroke-width="1"/>
+<text x="80.22" y="106.50" fill="#c9d1d9" font-size="12" text-anchor="end" dominant-baseline="middle">TypeScript  (1%)</text>
+<polygon points="210.00,157.50 245.18,181.95 233.35,215.33 215.73,221.91 209.05,211.97 208.14,210.42 209.03,209.22" fill="#aa9bef" fill-opacity="0.28" stroke="#aa9bef" stroke-width="2"/>
+<circle cx="210.00" cy="157.50" r="3" fill="#aa9bef"/>
+<circle cx="245.18" cy="181.95" r="3" fill="#aa9bef"/>
+<circle cx="233.35" cy="215.33" r="3" fill="#aa9bef"/>
+<circle cx="215.73" cy="221.91" r="3" fill="#aa9bef"/>
+<circle cx="209.05" cy="211.97" r="3" fill="#aa9bef"/>
+<circle cx="208.14" cy="210.42" r="3" fill="#aa9bef"/>
+<circle cx="209.03" cy="209.22" r="3" fill="#aa9bef"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="192" viewBox="0 0 480 192" font-family="JetBrains Mono, ui-monospace, monospace">
+<rect x="0.5" y="0.5" width="479" height="191" rx="10" fill="#0d1117" stroke="#21262d"/>
+<text x="20" y="34" fill="#aa9bef" font-size="15" font-weight="600">GitHub stats</text>
+<text x="20" y="66" fill="#8b949e" font-size="13">public repos</text>
+<text x="460" y="66" fill="#c9d1d9" font-size="13" text-anchor="end">47</text>
+<text x="20" y="100" fill="#8b949e" font-size="13">followers</text>
+<text x="460" y="100" fill="#c9d1d9" font-size="13" text-anchor="end">5</text>
+<text x="20" y="134" fill="#8b949e" font-size="13">stars earned</text>
+<text x="460" y="134" fill="#c9d1d9" font-size="13" text-anchor="end">1</text>
+<text x="20" y="168" fill="#8b949e" font-size="13">contributions / yr</text>
+<text x="460" y="168" fill="#c9d1d9" font-size="13" text-anchor="end">663</text>
+</svg>

@@ -1,0 +1,8 @@
+[
+  { "label": "GenAI / LLMs", "value": 0.95 },
+  { "label": "Agentic Workflows / RAG", "value": 0.9 },
+  { "label": "Backend / APIs", "value": 0.85 },
+  { "label": "Data & Vector DBs", "value": 0.8 },
+  { "label": "Cloud / DevOps", "value": 0.75 },
+  { "label": "Computer Vision", "value": 0.7 }
+]
