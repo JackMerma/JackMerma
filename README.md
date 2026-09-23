@@ -102,7 +102,12 @@ endangered languages.
 
 <br><br>
 
-<img src="assets/metrics.languages.svg" height="165" alt="most used languages">
+<!-- Language mix, rendered from assets/langmix.json by scripts/cards.py -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/card-languages-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-languages-light.svg">
+  <img src="assets/card-languages-dark.svg" width="440" alt="most used languages">
+</picture>
 
 </div>
 

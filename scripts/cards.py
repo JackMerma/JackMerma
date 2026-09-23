@@ -93,9 +93,54 @@ def render_stat_card(stats, theme_name):
     return "\n".join(parts)
 
 
+def render_language_card(langmix, theme_name):
+    t = PALETTES[theme_name]
+    w, pad = 480, 20
+    bar_w = w - 2 * pad
+    rows = (len(langmix) + 1) // 2
+    h = 74 + rows * 22
+
+    total = sum(entry["value"] for entry in langmix) or 1
+    parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
+        f'viewBox="0 0 {w} {h}" font-family="JetBrains Mono, ui-monospace, monospace">',
+        f'<rect x="0.5" y="0.5" width="{w-1}" height="{h-1}" rx="10" '
+        f'fill="{t["bg"]}" stroke="{t["border"]}"/>',
+        f'<text x="{pad}" y="34" fill="{t["accent"]}" font-size="15" font-weight="600">most used languages</text>',
+        f'<clipPath id="bar"><rect x="{pad}" y="46" width="{bar_w}" height="10" rx="5"/></clipPath>',
+    ]
+
+    x = pad
+    for i, entry in enumerate(langmix):
+        seg = bar_w * entry["value"] / total
+        parts.append(
+            f'<rect x="{x:.2f}" y="46" width="{seg:.2f}" height="10" '
+            f'fill="{t["series"][i % len(t["series"])]}" clip-path="url(#bar)"/>'
+        )
+        x += seg
+
+    for i, entry in enumerate(langmix):
+        col, row = i % 2, i // 2
+        lx = pad + col * (bar_w / 2)
+        ly = 82 + row * 22
+        color = t["series"][i % len(t["series"])]
+        parts.append(f'<circle cx="{lx+4}" cy="{ly-4}" r="4" fill="{color}"/>')
+        parts.append(
+            f'<text x="{lx+16}" y="{ly}" fill="{t["text"]}" font-size="12">{escape(entry["label"])}</text>'
+        )
+        parts.append(
+            f'<text x="{lx + bar_w/2 - 12}" y="{ly}" fill="{t["muted"]}" font-size="12" '
+            f'text-anchor="end">{entry["value"] * 100 / total:.1f}%</text>'
+        )
+
+    parts.append("</svg>")
+    return "\n".join(parts)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--user", required=True)
+    ap.add_argument("--langmix", required=True)
     ap.add_argument("--out", required=True, help="output directory")
     args = ap.parse_args()
 
@@ -103,10 +148,14 @@ def main():
     os.makedirs(args.out, exist_ok=True)
 
     stats = collect_stats(token, args.user)
+    with open(args.langmix, encoding="utf-8") as f:
+        langmix = json.load(f)
+
     for theme in THEMES:
-        svg = render_stat_card(stats, theme)
         with open(os.path.join(args.out, f"card-stats-{theme}.svg"), "w", encoding="utf-8") as f:
-            f.write(svg)
+            f.write(render_stat_card(stats, theme))
+        with open(os.path.join(args.out, f"card-languages-{theme}.svg"), "w", encoding="utf-8") as f:
+            f.write(render_language_card(langmix, theme))
 
     print("done")
 

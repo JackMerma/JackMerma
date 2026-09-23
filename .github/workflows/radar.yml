@@ -35,15 +35,16 @@ jobs:
       - name: Language radar
         run: python scripts/radar.py --data assets/langmix.json -o assets/radar-langs --values
 
-      # Self-hosted stat card. METRICS_TOKEN is a PAT that can read the
-      # contribution graph; the built-in GITHUB_TOKEN is the fallback and
-      # just means fewer stats (no private contribution count).
-      - name: Stat card
+      # Self-hosted stat and language cards. METRICS_TOKEN is a PAT that can
+      # read the contribution graph; the built-in GITHUB_TOKEN is the fallback
+      # and just means fewer stats (no private contribution count).
+      - name: Stat and language cards
         env:
           GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
         run: |
           python scripts/cards.py \
             --user "${{ github.repository_owner }}" \
+            --langmix assets/langmix.json \
             --out assets
 
       - name: Commit if changed

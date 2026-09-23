@@ -14,6 +14,7 @@ PALETTES = {
         "accent": "#7fd8a0",
         "accent_ink": "#08110d",
         "fill_opacity": "0.24",
+        "series": ["#7fd8a0", "#64c9b0", "#9ad97a", "#4fae87", "#b7e3a8", "#3f8f7a", "#a8dfd0", "#6f9f5f"],
     },
     "light": {
         "bg": "#ffffff",
@@ -26,5 +27,6 @@ PALETTES = {
         "accent": "#2f8f5b",
         "accent_ink": "#ffffff",
         "fill_opacity": "0.18",
+        "series": ["#2f8f5b", "#2b8b84", "#5a9e3a", "#217a5f", "#79b06a", "#1c6b63", "#4f9e8c", "#557f3e"],
     },
 }

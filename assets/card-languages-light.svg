@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="162" viewBox="0 0 480 162" font-family="JetBrains Mono, ui-monospace, monospace">
+<rect x="0.5" y="0.5" width="479" height="161" rx="10" fill="#ffffff" stroke="#d3e0d8"/>
+<text x="20" y="34" fill="#2f8f5b" font-size="15" font-weight="600">most used languages</text>
+<clipPath id="bar"><rect x="20" y="46" width="440" height="10" rx="5"/></clipPath>
+<rect x="20.00" y="46" width="165.00" height="10" fill="#2f8f5b" clip-path="url(#bar)"/>
+<rect x="185.00" y="46" width="141.42" height="10" fill="#2b8b84" clip-path="url(#bar)"/>
+<rect x="326.42" y="46" width="75.28" height="10" fill="#5a9e3a" clip-path="url(#bar)"/>
+<rect x="401.70" y="46" width="41.54" height="10" fill="#217a5f" clip-path="url(#bar)"/>
+<rect x="443.24" y="46" width="6.86" height="10" fill="#79b06a" clip-path="url(#bar)"/>
+<rect x="450.10" y="46" width="5.98" height="10" fill="#1c6b63" clip-path="url(#bar)"/>
+<rect x="456.08" y="46" width="3.92" height="10" fill="#4f9e8c" clip-path="url(#bar)"/>
+<circle cx="24.0" cy="78" r="4" fill="#2f8f5b"/>
+<text x="36.0" y="82" fill="#1f2a24" font-size="12">JavaScript</text>
+<text x="228.0" y="82" fill="#5b6b63" font-size="12" text-anchor="end">37.5%</text>
+<circle cx="244.0" cy="78" r="4" fill="#2b8b84"/>
+<text x="256.0" y="82" fill="#1f2a24" font-size="12">HTML</text>
+<text x="448.0" y="82" fill="#5b6b63" font-size="12" text-anchor="end">32.1%</text>
+<circle cx="24.0" cy="100" r="4" fill="#5a9e3a"/>
+<text x="36.0" y="104" fill="#1f2a24" font-size="12">Python</text>
+<text x="228.0" y="104" fill="#5b6b63" font-size="12" text-anchor="end">17.1%</text>
+<circle cx="244.0" cy="100" r="4" fill="#217a5f"/>
+<text x="256.0" y="104" fill="#1f2a24" font-size="12">CSS</text>
+<text x="448.0" y="104" fill="#5b6b63" font-size="12" text-anchor="end">9.4%</text>
+<circle cx="24.0" cy="122" r="4" fill="#79b06a"/>
+<text x="36.0" y="126" fill="#1f2a24" font-size="12">Kotlin</text>
+<text x="228.0" y="126" fill="#5b6b63" font-size="12" text-anchor="end">1.6%</text>
+<circle cx="244.0" cy="122" r="4" fill="#1c6b63"/>
+<text x="256.0" y="126" fill="#1f2a24" font-size="12">Jupyter Notebook</text>
+<text x="448.0" y="126" fill="#5b6b63" font-size="12" text-anchor="end">1.4%</text>
+<circle cx="24.0" cy="144" r="4" fill="#4f9e8c"/>
+<text x="36.0" y="148" fill="#1f2a24" font-size="12">TypeScript</text>
+<text x="228.0" y="148" fill="#5b6b63" font-size="12" text-anchor="end">0.9%</text>
+</svg>
