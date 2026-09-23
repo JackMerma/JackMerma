@@ -7,12 +7,12 @@
 <g transform="translate(0,116)"><rect x="0.5" y="0.5" width="419" height="99" rx="10" fill="#0d1117" stroke="#21262d"/><text x="18" y="28" fill="#aa9bef" font-size="14" font-weight="600">game-of-life</text><text x="402" y="28" fill="#8b949e" font-size="11" text-anchor="end">JavaScript</text>
 <text x="18" y="48" fill="#c9d1d9" font-size="12">Plataforma interactiva del juego de la vida en 2D y 3D.</text>
 </g>
-<g transform="translate(0,232)"><rect x="0.5" y="0.5" width="419" height="99" rx="10" fill="#0d1117" stroke="#21262d"/><text x="18" y="28" fill="#aa9bef" font-size="14" font-weight="600">jack.ai</text><text x="402" y="28" fill="#8b949e" font-size="11" text-anchor="end">private</text>
+<g transform="translate(0,232)"><rect x="0.5" y="0.5" width="419" height="99" rx="10" fill="#0d1117" stroke="#21262d"/><text x="18" y="28" fill="#aa9bef" font-size="14" font-weight="600">jack.ai</text><text x="402" y="28" fill="#8b949e" font-size="11" text-anchor="end"></text>
 <text x="18" y="48" fill="#c9d1d9" font-size="12">Asistente personal para reclutadores: un clon</text>
 <text x="18" y="65" fill="#c9d1d9" font-size="12">conversacional mio que responde dudas sobre mi perfil y</text>
 <text x="18" y="82" fill="#c9d1d9" font-size="12">experiencia.</text>
 </g>
-<g transform="translate(0,348)"><rect x="0.5" y="0.5" width="419" height="99" rx="10" fill="#0d1117" stroke="#21262d"/><text x="18" y="28" fill="#aa9bef" font-size="14" font-weight="600">Room-Shortest-Path</text><text x="402" y="28" fill="#8b949e" font-size="11" text-anchor="end">private</text>
+<g transform="translate(0,348)"><rect x="0.5" y="0.5" width="419" height="99" rx="10" fill="#0d1117" stroke="#21262d"/><text x="18" y="28" fill="#aa9bef" font-size="14" font-weight="600">Room-Shortest-Path</text><text x="402" y="28" fill="#8b949e" font-size="11" text-anchor="end"></text>
 <text x="18" y="48" fill="#c9d1d9" font-size="12">POC interactiva que permite crear una habitacion y</text>
 <text x="18" y="65" fill="#c9d1d9" font-size="12">calcular la ruta minima entre dos puntos, con analisis de</text>
 <text x="18" y="82" fill="#c9d1d9" font-size="12">ruta y estructura del espacio.</text>
