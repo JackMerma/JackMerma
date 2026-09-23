@@ -5,6 +5,7 @@
 import argparse
 import json
 import math
+from xml.sax.saxutils import escape
 
 THEMES = {
     "dark": {
@@ -29,15 +30,20 @@ THEMES = {
     },
 }
 
-SIZE = 420
-CENTER = SIZE / 2
+WIDTH = 700
+HEIGHT = 460
+CX = WIDTH / 2
+CY = HEIGHT / 2
 RADIUS = 140
+LABEL_OFFSET = 170
 RINGS = 4
 
 
-def point(angle, r):
-    x = CENTER + r * math.cos(angle)
-    y = CENTER + r * math.sin(angle)
+def point(angle, r, cx=None, cy=None):
+    cx = CX if cx is None else cx
+    cy = CY if cy is None else cy
+    x = cx + r * math.cos(angle)
+    y = cy + r * math.sin(angle)
     return x, y
 
 
@@ -47,9 +53,9 @@ def render(data, theme_name, show_values):
     angles = [-math.pi / 2 + i * (2 * math.pi / n) for i in range(n)]
 
     parts = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{SIZE}" height="{SIZE}" '
-        f'viewBox="0 0 {SIZE} {SIZE}" font-family="JetBrains Mono, ui-monospace, monospace">',
-        f'<rect width="{SIZE}" height="{SIZE}" fill="{t["bg"]}" rx="12"/>',
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" '
+        f'viewBox="0 0 {WIDTH} {HEIGHT}" font-family="JetBrains Mono, ui-monospace, monospace">',
+        f'<rect width="{WIDTH}" height="{HEIGHT}" fill="{t["bg"]}" rx="12"/>',
     ]
 
     # grid rings
@@ -64,10 +70,10 @@ def render(data, theme_name, show_values):
     for i, a in enumerate(angles):
         x, y = point(a, RADIUS)
         parts.append(
-            f'<line x1="{CENTER}" y1="{CENTER}" x2="{x:.2f}" y2="{y:.2f}" '
+            f'<line x1="{CX}" y1="{CY}" x2="{x:.2f}" y2="{y:.2f}" '
             f'stroke="{t["axis"]}" stroke-width="1"/>'
         )
-        lx, ly = point(a, RADIUS + 26)
+        lx, ly = point(a, LABEL_OFFSET)
         anchor = "middle"
         if math.cos(a) > 0.3:
             anchor = "start"
@@ -78,7 +84,7 @@ def render(data, theme_name, show_values):
             label += f'  ({data[i]["value"] * 100:.0f}%)'
         parts.append(
             f'<text x="{lx:.2f}" y="{ly:.2f}" fill="{t["text"]}" font-size="12" '
-            f'text-anchor="{anchor}" dominant-baseline="middle">{label}</text>'
+            f'text-anchor="{anchor}" dominant-baseline="middle">{escape(label)}</text>'
         )
 
     # value polygon

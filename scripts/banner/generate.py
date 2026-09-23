@@ -8,6 +8,7 @@ intentionally re-run this, not on every push.
 
 import argparse
 import base64
+from xml.sax.saxutils import escape
 
 THEMES = {
     "dark": {"bg": "#0d1117", "border": "#21262d", "text": "#c9d1d9", "muted": "#8b949e",
@@ -54,7 +55,7 @@ def render(theme_name, avatar_path):
         color = t["prompt"] if prompt == "$" else t["text"]
         prefix = f'<tspan fill="{t["prompt"]}">{prompt}</tspan> ' if prompt == "$" else "  "
         parts.append(
-            f'<text x="32" y="{y}" font-size="15" fill="{color}">{prefix}{text if prompt == "$" else text}</text>'
+            f'<text x="32" y="{y}" font-size="15" fill="{color}">{prefix}{escape(text)}</text>'
         )
         y += 28
 

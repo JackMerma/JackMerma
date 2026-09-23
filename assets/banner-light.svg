@@ -6,7 +6,7 @@
 <text x="500.0" y="31" fill="#57606a" font-size="12" text-anchor="middle">profile.sh --live</text>
 <line x1="0" y1="48" x2="1000" y2="48" stroke="#d0d7de"/>
 <text x="32" y="84" font-size="15" fill="#1a7f37"><tspan fill="#1a7f37">$</tspan> whoami</text>
-<text x="32" y="112" font-size="15" fill="#24292f">  Jackson Merma -- AI & Software Engineer</text>
+<text x="32" y="112" font-size="15" fill="#24292f">  Jackson Merma -- AI &amp; Software Engineer</text>
 <text x="32" y="140" font-size="15" fill="#1a7f37"><tspan fill="#1a7f37">$</tspan> cat focus.txt</text>
 <text x="32" y="168" font-size="15" fill="#24292f">  Agentic workflows, RAG systems, production GenAI</text>
 <text x="32" y="196" font-size="15" fill="#1a7f37"><tspan fill="#1a7f37">$</tspan> status --live</text>

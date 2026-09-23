@@ -9,7 +9,6 @@ on:
     paths:
       - "assets/skills.json"
       - "assets/langmix.json"
-      - "assets/projects.json"
       - "scripts/radar.py"
       - "scripts/cards.py"
       - ".github/workflows/radar.yml"
@@ -35,17 +34,15 @@ jobs:
       - name: Language radar
         run: python scripts/radar.py --data assets/langmix.json -o assets/radar-langs --values
 
-      # Self-hosted stat and repo cards. METRICS_TOKEN is a PAT with access to
-      # the private repos listed in assets/projects.json; the built-in
-      # GITHUB_TOKEN is the fallback and just means those cards fall back to
-      # public-only data.
-      - name: Stat and repo cards
+      # Self-hosted stat card. METRICS_TOKEN is a PAT that can read the
+      # contribution graph; the built-in GITHUB_TOKEN is the fallback and
+      # just means fewer stats (no private contribution count).
+      - name: Stat card
         env:
           GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
         run: |
           python scripts/cards.py \
             --user "${{ github.repository_owner }}" \
-            --projects assets/projects.json \
             --out assets
 
       - name: Commit if changed
